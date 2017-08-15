@@ -3,5 +3,5 @@
     "append": true,
     "watch": true,
     "script": "server.js",
-    "sourceDir": "~/hello-world-2"
+    "sourceDir": "/home/james/hello-world-2"
 }
