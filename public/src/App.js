@@ -3,7 +3,11 @@ import logo from './logo.svg';
 import './App.css';
 
 import axios from 'axios';
-axios.defaults.baseURL = "https://jameslemire.me/projects/hello-world";
+
+console.log( process.env );
+if ( process.env.NODE_ENV !== "development" ) {
+  axios.defaults.baseURL = "https://jameslemire.me/projects/hello-world";
+}
 
 class App extends Component {
   constructor() {
